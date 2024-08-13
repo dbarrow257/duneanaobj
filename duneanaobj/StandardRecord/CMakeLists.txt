@@ -117,6 +117,7 @@ else()
   target_include_directories(duneanaobj_StandardRecord PUBLIC 
     $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}> 
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../../>
     $<INSTALL_INTERFACE:include>)
   set_target_properties(duneanaobj_StandardRecord PROPERTIES 
     PUBLIC_HEADER "${SR_HEADER_FILES_REL}" 
